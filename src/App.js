@@ -6,6 +6,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import VistaTrabajador from './app/pages/trabajador/VistaTrabajador';
 import AgregarTrabajador from './app/pages/trabajador/AgregarTrabajador';
 import EditarTrabajador from './app/pages/trabajador/EditarTrabajador';
+
+//Usuario
+import VistaUsuario from './app/pages/usuario/VistaUsuario';
+import AgregarUsuario from './app/pages/usuario/AgregarUsuario';
+import EditarUsuario from './app/pages/usuario/EditarUsuario';
+
+
 function App() {
   return (
     <BrowserRouter>
@@ -16,6 +23,10 @@ function App() {
             <Route path="/trabajador" exact><VistaTrabajador/></Route>
             <Route path="/agregartrabajador" exact><AgregarTrabajador/></Route>
             <Route path="/editarTrabajador/:id" exact><EditarTrabajador/></Route>
+            {/* Usaurio */}
+            <Route path="/usuario" exact><VistaUsuario/></Route>
+            <Route path="/agregarusuario" exact><AgregarUsuario/></Route>
+            <Route path="/editarusuario/:id" exact><EditarUsuario/></Route>
 
             <Redirect to="/inicio"></Redirect>
         </Switch>

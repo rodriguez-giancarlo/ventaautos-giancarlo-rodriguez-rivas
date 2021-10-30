@@ -13,9 +13,10 @@ const BarraNavegacion = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
                         <NavLink to="/trabajador" className="opt-barra">Trabajador</NavLink>
+                        <NavLink to="/usuario" className="opt-barra">Usuario</NavLink>
+
                         <NavLink to="/marca" className="opt-barra">Marca</NavLink>
                         <NavLink to="/auto" className="opt-barra">Auto</NavLink>
-                        <NavLink to="/usuario" className="opt-barra">Usuario</NavLink>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
