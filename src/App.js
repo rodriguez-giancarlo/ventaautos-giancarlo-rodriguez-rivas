@@ -12,6 +12,10 @@ import VistaUsuario from './app/pages/usuario/VistaUsuario';
 import AgregarUsuario from './app/pages/usuario/AgregarUsuario';
 import EditarUsuario from './app/pages/usuario/EditarUsuario';
 
+//Marca
+import VistaMarca from './app/pages/marca/VistaMarca';
+import AgregarMarca from './app/pages/marca/AgregarMarca';
+
 
 function App() {
   return (
@@ -27,6 +31,9 @@ function App() {
             <Route path="/usuario" exact><VistaUsuario/></Route>
             <Route path="/agregarusuario" exact><AgregarUsuario/></Route>
             <Route path="/editarusuario/:id" exact><EditarUsuario/></Route>
+            {/* Marca */}
+            <Route path="/marca" exact><VistaMarca/></Route>
+            <Route path="/agregarmarca" exact><AgregarMarca/></Route>
 
             <Redirect to="/inicio"></Redirect>
         </Switch>
