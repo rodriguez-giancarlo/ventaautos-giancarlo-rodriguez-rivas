@@ -85,7 +85,7 @@ const FormEditarAuto = ({
                 <Row className="mt-3">
                     <Col>
                         <Button className="btn btn-primary" type="submit" style={{ marginRight: "10px" }}>
-                            Registrar
+                            editar
                         </Button>
                         <Link to="/auto" className="btn btn-danger">
                             Cancelar
