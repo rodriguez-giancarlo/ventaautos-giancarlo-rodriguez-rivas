@@ -15,6 +15,12 @@ import EditarUsuario from './app/pages/usuario/EditarUsuario';
 //Marca
 import VistaMarca from './app/pages/marca/VistaMarca';
 import AgregarMarca from './app/pages/marca/AgregarMarca';
+import EditarMarca from './app/pages/marca/EditarMarca';
+
+//Auto
+import VistaAuto from './app/pages/auto/VistaAuto';
+import AgregarAuto from './app/pages/auto/AgregarAuto';
+import EditarAuto from './app/pages/auto/EditarAuto';
 
 
 function App() {
@@ -34,6 +40,11 @@ function App() {
             {/* Marca */}
             <Route path="/marca" exact><VistaMarca/></Route>
             <Route path="/agregarmarca" exact><AgregarMarca/></Route>
+            <Route path="/editarmarca/:id" exact><EditarMarca/></Route>
+            {/* Auto */}
+            <Route path="/auto" exact><VistaAuto/></Route>
+            <Route path="/agregarauto" exact><AgregarAuto/></Route>
+            <Route path="/editarauto/:id" exact><EditarAuto/></Route>
 
             <Redirect to="/inicio"></Redirect>
         </Switch>
